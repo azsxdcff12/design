@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>성환이의 포트폴리오</title>
+  <style>
+    :root {
+      --bg-color: #f7efdf;
+      --main-green: #4b8a6f;
+      --text-color: #222;
+      --accent-color: #e26060;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .green-section {
+      background-color: var(--main-green);
+      padding: 4rem 1rem;
+      color: white;
+      text-align: center;
+      border-radius: 40px;
+    }
+
+    .green-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .feature {
+      border: 1px dotted #fff;
+      padding: 1rem 2rem;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    section {
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    h3.section-title {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+    }
+
+    .button {
+      margin-top: 2rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--text-color);
+      background-color: transparent;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background-color: var(--bg-color);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+    }
+
+    .marquee {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ccc;
+      font-weight: bold;
+      color: var(--main-green);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>성환이의 포트폴리오</h1>
+  </header>
+
+  <section class="hero">
+    <h2>An <em>artist</em> is the <em>Art itself</em><br />Art Artist</h2>
+  </section>
+
+  <section class="green-section">
+    <h2>성환이의 포트폴리오</h2>
+    <p>예술가의 긴 여정, 그 자체가 예술이다.</p>
+    <div class="features">
+      <div class="feature">브랜딩</div>
+      <div class="feature">매니지먼트</div>
+      <div class="feature">에이전시</div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="section-title">WORK</h3>
+    <div class="grid">
+      <div class="card"><img src="images/port1.jpg" alt="work"><p>작품 설명 1</p></div>
+      <div class="card"><img src="images/port2.jpg" alt="work"><p>작품 설명 2</p></div>
+      <div class="card"><img src="images/port3.jpg" alt="work"><p>작품 설명 3</p></div>
+      <div class="card"><img src="images/port4.jpg" alt="work"><p>작품 설명 4</p></div>
+    </div>
+    <button class="button">+ MORE VIEW</button>
+  </section>
+
+  <section>
+    <h3 class="section-title">ARTIST</h3>
+    <div class="grid">
+      <div class="card"><img src="images/KakaoTalk_20250219_001553467.jpg" alt="artist"><p>ARTIST 1</p></div>
+      <div class="card"><img src="images/KakaoTalk_20250315_023115978.jpg" alt="artist"><p>ARTIST 2</p></div>
+      <div class="card"><img src="images/KakaoTalk_20250315_023115978_01.jpg" alt="artist"><p>ARTIST 3</p></div>
+    </div>
+    <button class="button">+ MORE VIEW</button>
+  </section>
+
+  <section>
+    <h3 class="section-title">NEWS</h3>
+    <div class="grid">
+      <div class="card"><p><strong>2025.06.01</strong><br>포트폴리오 사이트 오픈 🎉</p></div>
+      <div class="card"><p><strong>2025.05.21</strong><br>신규 프로젝트 공개</p></div>
+    </div>
+    <button class="button">+ MORE VIEW</button>
+  </section>
+
+  <div class="marquee">
+    성환이의 포트폴리오 ❉ An artist is the Art itself. ❉ 성환이의 포트폴리오 ❉ An artist is the Art itself.
+  </div>
+
+  <footer>
+    <p>© 2025 성환이의 포트폴리오. All rights reserved.</p>
+    <p>함께 협업하거나 채팅해요! 이메일: <a href="mailto:min9971625@naver.com">min9971625@naver.com</a>으로 연락하세요.</p>
+  </footer>
+</body>
+</html>
